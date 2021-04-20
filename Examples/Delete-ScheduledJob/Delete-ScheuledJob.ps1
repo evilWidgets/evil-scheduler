@@ -3,5 +3,5 @@
 # known as "noop-job" 
 
 
-
+Unregister-ScheduledJob -Name "NoOp" -Force 
 
