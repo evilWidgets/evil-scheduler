@@ -1,0 +1,19 @@
+;; in the tradition of Microsoft: create a ddl / micro language. 
+;; in this case, a .job file is a .ini config file specifically for defining the parameters of a scheduled job.
+;; - evil 
+
+;; job name, job author 
+[job]
+jobName = "NoOp"
+jobType = "useless"
+
+
+;; job trigger (schedule/event)
+[trigger]
+Interval = "daily"
+At = "2:00pm" 
+
+;; well... options 
+[option]
+StartIfOnBattery = true 
+StartIfIdle = true 
