@@ -35,7 +35,7 @@ $dailyTrigger  =  New-JobTrigger -Daily -At "2:00pm"
 $option = New-ScheduledJobOption -StartIfOnBattery -StartIfIdle 
 
 # create a script block for the job to execute: 
-$action = "Write-Host NoOp"
+$action = "add-content C:\temp\test.txt $(date)"
 $jobAction = [scriptblock]::Create($action)
 
 # Now, Register the scheduled job. 
